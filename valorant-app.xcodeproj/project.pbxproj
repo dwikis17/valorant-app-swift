@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		640E1A6D2AED70E8001B60E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A6C2AED70E8001B60E4 /* AppDelegate.swift */; };
 		640E1A6F2AED70E8001B60E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A6E2AED70E8001B60E4 /* SceneDelegate.swift */; };
-		640E1A712AED70E8001B60E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A702AED70E8001B60E4 /* ViewController.swift */; };
-		640E1A742AED70E8001B60E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E1A722AED70E8001B60E4 /* Main.storyboard */; };
+		640E1A712AED70E8001B60E4 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A702AED70E8001B60E4 /* HomeController.swift */; };
 		640E1A762AED70E9001B60E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640E1A752AED70E9001B60E4 /* Assets.xcassets */; };
 		640E1A792AED70E9001B60E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E1A772AED70E9001B60E4 /* LaunchScreen.storyboard */; };
+		640E1A892AED74AA001B60E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A882AED74AA001B60E4 /* TabBarController.swift */; };
+		640E1A8C2AED78BD001B60E4 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A8B2AED78BD001B60E4 /* File.swift */; };
+		640E1A8F2AED7B16001B60E4 /* CharactersCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E1A8E2AED7B16001B60E4 /* CharactersCollectionCell.swift */; };
+		641A9E222AF1FE8D00320F36 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A9E212AF1FE8D00320F36 /* DetailViewController.swift */; };
+		641F5BEB2AFF209300FC3C19 /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641F5BEA2AFF209300FC3C19 /* CircularImage.swift */; };
+		642D81192AF145CD00D6EBEB /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D81182AF145CD00D6EBEB /* HomeControllerViewModel.swift */; };
+		643A90482AFE08DE00FE2E7D /* HomeControllerWithCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A90472AFE08DE00FE2E7D /* HomeControllerWithCardViewController.swift */; };
+		643A904A2AFE093200FE2E7D /* RectangleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A90492AFE093200FE2E7D /* RectangleCardView.swift */; };
+		6444F6762AF9E7F50039CB0E /* SkillContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444F6752AF9E7F50039CB0E /* SkillContainerView.swift */; };
+		6444F6782AF9E9AB0039CB0E /* CharacterSkillCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444F6772AF9E9AB0039CB0E /* CharacterSkillCellCollectionViewCell.swift */; };
+		6475E1982AEEAD1D00BC4FDD /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475E1972AEEAD1D00BC4FDD /* HTTP.swift */; };
+		6475E19A2AEEADCD00BC4FDD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475E1992AEEADCD00BC4FDD /* Endpoint.swift */; };
+		6475E19D2AEEAE3B00BC4FDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475E19C2AEEAE3B00BC4FDD /* Constants.swift */; };
+		6475E1A12AEEB12300BC4FDD /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6475E1A02AEEB12300BC4FDD /* CharacterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		640E1A692AED70E8001B60E4 /* valorant-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "valorant-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		640E1A6C2AED70E8001B60E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		640E1A6E2AED70E8001B60E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		640E1A702AED70E8001B60E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		640E1A732AED70E8001B60E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		640E1A702AED70E8001B60E4 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		640E1A752AED70E9001B60E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		640E1A782AED70E9001B60E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		640E1A7A2AED70E9001B60E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640E1A882AED74AA001B60E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		640E1A8B2AED78BD001B60E4 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		640E1A8E2AED7B16001B60E4 /* CharactersCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionCell.swift; sourceTree = "<group>"; };
+		641A9E212AF1FE8D00320F36 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		641F5BEA2AFF209300FC3C19 /* CircularImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
+		642D81182AF145CD00D6EBEB /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
+		643A90472AFE08DE00FE2E7D /* HomeControllerWithCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerWithCardViewController.swift; sourceTree = "<group>"; };
+		643A90492AFE093200FE2E7D /* RectangleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCardView.swift; sourceTree = "<group>"; };
+		6444F6752AF9E7F50039CB0E /* SkillContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillContainerView.swift; sourceTree = "<group>"; };
+		6444F6772AF9E9AB0039CB0E /* CharacterSkillCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSkillCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		6475E1972AEEAD1D00BC4FDD /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		6475E1992AEEADCD00BC4FDD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6475E19C2AEEAE3B00BC4FDD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6475E1A02AEEB12300BC4FDD /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,100 @@
 		640E1A6B2AED70E8001B60E4 /* valorant-app */ = {
 			isa = PBXGroup;
 			children = (
-				640E1A6C2AED70E8001B60E4 /* AppDelegate.swift */,
-				640E1A6E2AED70E8001B60E4 /* SceneDelegate.swift */,
-				640E1A702AED70E8001B60E4 /* ViewController.swift */,
-				640E1A722AED70E8001B60E4 /* Main.storyboard */,
-				640E1A752AED70E9001B60E4 /* Assets.xcassets */,
-				640E1A772AED70E9001B60E4 /* LaunchScreen.storyboard */,
+				6475E1962AEEAD1100BC4FDD /* API */,
+				640E1A872AED72DC001B60E4 /* Supporting */,
+				640E1A862AED72D7001B60E4 /* View */,
+				640E1A852AED72D0001B60E4 /* Service */,
+				640E1A822AED72BC001B60E4 /* Controller */,
+				640E1A812AED72B7001B60E4 /* Viewmodel */,
+				640E1A802AED72AE001B60E4 /* Model */,
 				640E1A7A2AED70E9001B60E4 /* Info.plist */,
 			);
 			path = "valorant-app";
+			sourceTree = "<group>";
+		};
+		640E1A802AED72AE001B60E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				640E1A8B2AED78BD001B60E4 /* File.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		640E1A812AED72B7001B60E4 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				642D81182AF145CD00D6EBEB /* HomeControllerViewModel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		640E1A822AED72BC001B60E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				640E1A702AED70E8001B60E4 /* HomeController.swift */,
+				640E1A882AED74AA001B60E4 /* TabBarController.swift */,
+				641A9E212AF1FE8D00320F36 /* DetailViewController.swift */,
+				643A90472AFE08DE00FE2E7D /* HomeControllerWithCardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		640E1A852AED72D0001B60E4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6475E1A02AEEB12300BC4FDD /* CharacterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		640E1A862AED72D7001B60E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				640E1A8D2AED7AFB001B60E4 /* Cell */,
+				640E1A8A2AED7734001B60E4 /* Home */,
+				6444F6752AF9E7F50039CB0E /* SkillContainerView.swift */,
+				641F5BEA2AFF209300FC3C19 /* CircularImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		640E1A872AED72DC001B60E4 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				640E1A6C2AED70E8001B60E4 /* AppDelegate.swift */,
+				640E1A6E2AED70E8001B60E4 /* SceneDelegate.swift */,
+				640E1A752AED70E9001B60E4 /* Assets.xcassets */,
+				640E1A772AED70E9001B60E4 /* LaunchScreen.storyboard */,
+				6475E19C2AEEAE3B00BC4FDD /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		640E1A8A2AED7734001B60E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				643A90492AFE093200FE2E7D /* RectangleCardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		640E1A8D2AED7AFB001B60E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				640E1A8E2AED7B16001B60E4 /* CharactersCollectionCell.swift */,
+				6444F6772AF9E9AB0039CB0E /* CharacterSkillCellCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6475E1962AEEAD1100BC4FDD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6475E1972AEEAD1D00BC4FDD /* HTTP.swift */,
+				6475E1992AEEADCD00BC4FDD /* Endpoint.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +238,6 @@
 			files = (
 				640E1A792AED70E9001B60E4 /* LaunchScreen.storyboard in Resources */,
 				640E1A762AED70E9001B60E4 /* Assets.xcassets in Resources */,
-				640E1A742AED70E8001B60E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +248,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				640E1A712AED70E8001B60E4 /* ViewController.swift in Sources */,
+				643A90482AFE08DE00FE2E7D /* HomeControllerWithCardViewController.swift in Sources */,
+				6444F6762AF9E7F50039CB0E /* SkillContainerView.swift in Sources */,
+				640E1A8C2AED78BD001B60E4 /* File.swift in Sources */,
+				640E1A712AED70E8001B60E4 /* HomeController.swift in Sources */,
+				6475E19A2AEEADCD00BC4FDD /* Endpoint.swift in Sources */,
+				641F5BEB2AFF209300FC3C19 /* CircularImage.swift in Sources */,
+				641A9E222AF1FE8D00320F36 /* DetailViewController.swift in Sources */,
+				6475E1982AEEAD1D00BC4FDD /* HTTP.swift in Sources */,
+				6444F6782AF9E9AB0039CB0E /* CharacterSkillCellCollectionViewCell.swift in Sources */,
+				640E1A892AED74AA001B60E4 /* TabBarController.swift in Sources */,
+				6475E1A12AEEB12300BC4FDD /* CharacterService.swift in Sources */,
+				640E1A8F2AED7B16001B60E4 /* CharactersCollectionCell.swift in Sources */,
 				640E1A6D2AED70E8001B60E4 /* AppDelegate.swift in Sources */,
+				643A904A2AFE093200FE2E7D /* RectangleCardView.swift in Sources */,
+				642D81192AF145CD00D6EBEB /* HomeControllerViewModel.swift in Sources */,
 				640E1A6F2AED70E8001B60E4 /* SceneDelegate.swift in Sources */,
+				6475E19D2AEEAE3B00BC4FDD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		640E1A722AED70E8001B60E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				640E1A732AED70E8001B60E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		640E1A772AED70E9001B60E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +413,6 @@
 				INFOPLIST_FILE = "valorant-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +440,6 @@
 				INFOPLIST_FILE = "valorant-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
