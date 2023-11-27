@@ -16,13 +16,19 @@ class TabBarController: UITabBarController {
     
     private func setupTabs() {
         let home = HomeControllerWithCardViewController()
+        let topup = TopUpViewController()
+        
+        topup.tabBarItem.image = UIImage(systemName: "person.fill")
+        topup.title = "Topup"
         
         home.tabBarItem.image = UIImage(systemName: "house.fill")
         home.title = "Home"
         
-        let nav1 = UINavigationController(rootViewController: home)
         
-        setViewControllers([nav1], animated: true)
+        let nav1 = UINavigationController(rootViewController: home)
+        let nav2 = UINavigationController(rootViewController: topup)
+        
+        setViewControllers([nav1, nav2], animated: true)
         
 
     }

@@ -16,9 +16,10 @@ class CharacterSkillCellCollectionViewCell: UICollectionViewCell {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.image = UIImage(systemName: "questionmark")
-        iv.backgroundColor = .systemCyan
         return iv
     }()
+    
+    private let skillContainerCard = RectangleCardView()
     
     
     public func configure(with ability: ability) {
@@ -41,17 +42,25 @@ class CharacterSkillCellCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupUI() {
-        self.addSubview(abilityImage)
+      
+        self.addSubview(skillContainerCard)
+        self.skillContainerCard.addSubview(abilityImage)
+        
+        skillContainerCard.translatesAutoresizingMaskIntoConstraints = false
         abilityImage.layer.cornerRadius = 20
         abilityImage.translatesAutoresizingMaskIntoConstraints = false
+        skillContainerCard.backgroundColor = .systemOrange
         
         NSLayoutConstraint.activate([
-
+            skillContainerCard.topAnchor.constraint(equalTo: self.topAnchor),
+            skillContainerCard.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            skillContainerCard.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            skillContainerCard.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             
-            abilityImage.topAnchor.constraint(equalTo: self.topAnchor),
-            abilityImage.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            abilityImage.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            abilityImage.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            abilityImage.topAnchor.constraint(equalTo: self.skillContainerCard.topAnchor),
+            abilityImage.bottomAnchor.constraint(equalTo: self.skillContainerCard.bottomAnchor),
+            abilityImage.trailingAnchor.constraint(equalTo: self.skillContainerCard.trailingAnchor),
+            abilityImage.leadingAnchor.constraint(equalTo: self.skillContainerCard.leadingAnchor),
 
         ])
     }

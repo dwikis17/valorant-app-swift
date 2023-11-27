@@ -10,6 +10,7 @@ import Foundation
 enum Endpoint {
     
     case fetchCharacter(url: String = "/v1/agents")
+    case fetchmap(url: String = "/v1/maps")
     
         var request: URLRequest? {
             guard let url = self.url else { return nil }
@@ -34,6 +35,9 @@ enum Endpoint {
         switch self {
         case .fetchCharacter(let url):
             return url
+            
+        case .fetchmap(let url):
+            return url
         }
     }
     
@@ -41,12 +45,18 @@ enum Endpoint {
         switch self {
         case .fetchCharacter:
             return HTTP.Method.get.rawValue
+            
+        case .fetchmap:
+            return HTTP.Method.get.rawValue
         }
     }
     
     private var httpBody: Data? {
         switch self {
         case .fetchCharacter:
+            return nil
+            
+        case .fetchmap:
             return nil
         }
     }
@@ -57,6 +67,9 @@ enum Endpoint {
             return [
                 URLQueryItem(name: "isPlayableCharacter", value: "true")
             ]
+            
+        case .fetchmap:
+            return []
         }
     }
     
@@ -67,6 +80,9 @@ extension URLRequest {
     mutating func addValue (for endpoint: Endpoint) {
         switch endpoint {
         case .fetchCharacter:
+            self.setValue(HTTP.Headers.Value.applicationJson.rawValue, forHTTPHeaderField: HTTP.Headers.Key.contentType.rawValue)
+            
+        case .fetchmap:
             self.setValue(HTTP.Headers.Value.applicationJson.rawValue, forHTTPHeaderField: HTTP.Headers.Key.contentType.rawValue)
         }
     }

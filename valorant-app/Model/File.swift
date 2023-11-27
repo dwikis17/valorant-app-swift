@@ -32,3 +32,4 @@ struct ability: Codable {
     let description: String
     let displayIcon: URL?
 }
+

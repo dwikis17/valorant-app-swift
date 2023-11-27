@@ -24,11 +24,20 @@ class CharactersCollectionCell: UICollectionViewCell {
         return iv
     }()
     
+    private let characterRole: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 16, weight: .light)
+        label.text = "title"
+        return label
+    }()
+    
     private let characterLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .white
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 16, weight: .regular)
+        label.font = .systemFont(ofSize: 20, weight: .semibold)
         label.text = "title"
         return label
     }()
@@ -43,7 +52,7 @@ class CharactersCollectionCell: UICollectionViewCell {
                     DispatchQueue.main.async { [weak self] in
                         self?.characterLabel.text = character.displayName
                         self?.characterImageView.image = image
-               
+                        self?.characterRole.text = character.role.displayName
                     }
                 }
                 
@@ -53,12 +62,18 @@ class CharactersCollectionCell: UICollectionViewCell {
     }
     
     private func setupUI() {
+    
         self.addSubview(rectangleView)
+        
+        self.rectangleView.addSubview(characterRole)
         self.rectangleView.addSubview(characterImageView)
-        characterImageView.layer.masksToBounds = true
+        self.rectangleView.addSubview(characterLabel)
+        
         characterImageView.translatesAutoresizingMaskIntoConstraints = false
         rectangleView.translatesAutoresizingMaskIntoConstraints = false
-       
+        characterLabel.translatesAutoresizingMaskIntoConstraints = false
+        characterRole.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
             rectangleView.topAnchor.constraint(equalTo: self.topAnchor),
             rectangleView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
@@ -69,6 +84,14 @@ class CharactersCollectionCell: UICollectionViewCell {
             characterImageView.heightAnchor.constraint(equalTo: characterImageView.widthAnchor),
             characterImageView.topAnchor.constraint(equalTo: self.rectangleView.topAnchor, constant: 5),
             characterImageView.centerXAnchor.constraint(equalTo: self.rectangleView.centerXAnchor),
+            
+            characterRole.topAnchor.constraint(equalTo: characterImageView.bottomAnchor, constant: 10),
+            characterRole.centerXAnchor.constraint(equalTo: characterImageView.centerXAnchor),
+            
+            characterLabel.topAnchor.constraint(equalTo: characterRole.bottomAnchor, constant: 15),
+            characterLabel.centerXAnchor.constraint(equalTo: characterRole.centerXAnchor),
+            
+            
         ])
     }
     

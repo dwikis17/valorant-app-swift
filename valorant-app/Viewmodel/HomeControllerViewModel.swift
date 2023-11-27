@@ -12,14 +12,23 @@ class HomeControllerViewModel {
     
     var onError: ((CharacterServiceError) -> Void)?
     
+    var onMapUpdated: (() -> Void)?
+    
     private(set) var characters: [Character] = [] {
         didSet {
             self.onCharacterUpdated?()
         }
     }
     
+    private(set) var maps: [Map] = [] {
+        didSet {
+            self.onMapUpdated?()
+        }
+    }
+    
     init() {
         self.fetchCharacter()
+        self.fetchMap()
     }
     
     public func fetchCharacter() {
@@ -34,5 +43,22 @@ class HomeControllerViewModel {
                 print(error)
             }
         }
+    }
+    
+    public func fetchMap() {
+        let endpoint = Endpoint.fetchmap()
+        
+        MapService.fetchMaps(with: endpoint) { [weak self] result in
+            switch result {
+            case .success(let map):
+                self?.maps = map
+                
+            case.failure(let error):
+                print(error)
+            }
+        }
+        
+        
+        
     }
 }
